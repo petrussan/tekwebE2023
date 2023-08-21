@@ -1,0 +1,18 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            let number = [];
+            let big = 0;
+            for (let i=0;i<10;i++) {
+                number[i]=parseInt(prompt("Masukkan angka ke "+i));
+                console.log(number[i]);
+                if (number[i]>big)
+                    big=number[i];
+            }
+            window.alert(big);
+        </script>
+    </body>
+</html>
