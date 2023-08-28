@@ -1,0 +1,23 @@
+Buat sebuah dokumen html yang menampilkan informasi tentang diri Anda. Tampilan minimal menampilkan:
+    - Nama
+    - Profile Picture
+    - Paragraf yang menjelaskan tentang diri Anda
+
+Tambahkan CSS ke file yang sudah Anda buat. Atur hal-hal berikut:
+    - Warna latar belakang
+    - Ukuran teks
+    - Warna teks
+    - Font yang dipakai
+    - Tampilan image (contoh: lingkaran, elips, nama di atas image, atau yang lain)
+
+Buat menu ke halaman lain (3 link, boleh memanfaatkan dropdown menu)
+
+link 1, menuju ke halaman berisikan html form yang meminta nama, alamat, email dan pesan dari pengguna.
+
+link 2, menampilkan foto kenangan. Buat tombol navigasi untuk pindah dari satu foto ke foto lain. Foto yang tampil satu saat satu buah.
+
+link 3, demonstrasikan penggunaan JavaScript untuk berinteraksi dengan pengguna.
+
+
+
+

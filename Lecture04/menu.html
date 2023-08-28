@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Contoh Menu</title>
+        <style>
+            .dropdown {
+                position: relative;
+                top: 10px;
+                left: 20px;
+            }
+            .dropdown-button {
+                background-color: aqua;
+                color: black;
+                border: none;
+                padding: 10px 10px;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: aliceblue;
+                min-width: 120px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 12 px;
+                display: block;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Contoh menu dropdown</h1>
+        <div class="dropdown">
+            <button class="dropdown-button">Menu</button>
+            <div class="dropdown-content">
+                <a href="./object.html">Menu 1</a>
+                <a href="./spandivtest.html">Menu 2</a>
+                <a href="./tabletest.html">Menu 3</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            #datetime {
+                background-color: blanchedalmond;
+            }
+        </style>
+        <script>
+            function updateTime() {
+                const datetimeElement = document.getElementById("datetime");
+                const now = new Date();
+                const options = {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric',
+                    timeZoneName: 'short'                
+                };
+                const formattedTime = now.toLocaleDateString('id-ID',options);
+                datetimeElement.textContent = formattedTime;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Waktu saat ini</h1>
+        <p id="datetime">Memuat.....</p>
+        <script>
+            setInterval(updateTime,1000);
+            updateTime();
+        </script>
+    </body>
+</html>

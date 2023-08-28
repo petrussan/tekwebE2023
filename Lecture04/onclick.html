@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <style>
+            button {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="click1">Klik di sini</button>
+        <p id="message"></p>
+        <script>
+            const button = document.getElementById("click1");
+            const msg = document.getElementById("message");
+            button.addEventListener('click',function(){
+                msg.textContent="tombol sudah diklik";
+            })
+        </script>
+    </body>
+</html>
