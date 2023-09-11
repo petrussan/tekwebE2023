@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#bt1").click(function(){
+                    $("p").last().append(" <b>inserted text</b>");
+                });
+                $("#bt2").click(function(){
+                    $("ol").append("<li>inserted item</li>");
+                });
+                $("#bt3").click(function(){
+                    $("li").remove();
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2</p>
+        <p>this is paragraph 3</p>
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ol>
+        <button id="bt1">Append text</button>
+        <button id="bt2">Append list item</button>
+        <button id="bt3">Remove list</button>
+    </body>
+</html>

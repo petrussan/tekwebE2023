@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#first").toggle();
+                });
+                $("#animasi").click(function(){
+                    $("div").animate({left:'300px'});
+                    $("div").animate({left:'0px'});
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <h1>this is a heading</h1>
+        <p id="first">this is the first paragraph.</p>
+        <p id="second">this is the second paragraph.</p>
+        <p>this is the third paragraph.</p>
+        <p>this is the fourth paragraph.</p>
+        <button>Click to hide</button>
+        <div style="background: #ff0000;height:100px;width: 100px ;position: absolute;"></div>
+        <button id="animasi">click to animate</button>
+    </body>
+</html>

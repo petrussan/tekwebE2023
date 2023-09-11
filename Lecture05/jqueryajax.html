@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#d01").load("./soal.txt");
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <div id="d01">Try to change text using AJAX</div>
+        <button>get content</button>
+
+    </body>
+</html>
