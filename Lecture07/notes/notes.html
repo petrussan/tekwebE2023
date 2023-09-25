@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<button class="btn btn-primary" id=""addNote>Add Note</button>
+<div ...... id="noteInput" style="display: none;">
+    <input type="text" class=""form-control"
+</div>
+
+
+<div class="row" id="mycontainer">
+    <!--- note akan ditambahkan di sini -->
+</div>
+
+
+    <script>
+        function addnote(text) {
+            const mynote=`
+                <div class="col-md-4">
+                    <div class="card">
+                        ....
+                        <button class="btn btn-danger btn-sm delete-note">
+                            Delete</button>
+                    </div>
+                ........
+                </div>
+            `;
+            $("#mycontainer").append(mynote);
+        }
+
+        $(document).ready(function(){
+            $("#addNote").click(function(){
+                $("#noteInput").toggle();
+            });
+
+            $("#saveNote").click(function(){
+                ...
+                addnote(...);
+            });
+
+            $("#mycontainer").on("click",".delete-note",function(){
+                $(this).closest(".col-md-4").remove();
+            });
+        });
+
+    </script>
+</body>
+</html>
