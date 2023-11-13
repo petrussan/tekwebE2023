@@ -47,7 +47,7 @@ class FoodRestHandler extends SimpleRest {
 	}
 	
 	public function encodeXml($responseData) {
-		$xml = new SimpleXMLElement('<?xml version="1.0"?>');
+		$xml = new SimpleXMLElement('<?xml version="1.0"?><food></food>');
 		foreach($responseData as $key=>$value) {
 			$xml->addChild($key, $value);
 		}
